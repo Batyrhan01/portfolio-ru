@@ -158,3 +158,39 @@ export const projects: Project[] = [
     ],
   },
 ];
+
+export type MoreSite = {
+  /** Имя репозитория: из него собираются ссылка и путь к снимку public/sites/<id>.webp */
+  id: string;
+  name: string;
+  niche: string;
+  kind: 'dent' | 'other';
+};
+
+export const moreSitesText = 'Сайты для бизнеса в Астане. Сделал по своей инициативе, каждый можно открыть.';
+
+export const siteUrl = (id: string) => `https://batyrhan01.github.io/${id}/`;
+export const siteShot = (id: string) => `${base}sites/${id}.webp`;
+
+// Блок «Ещё N сайтов». Число в заголовке и фильтре считается само.
+export const moreSites: MoreSite[] = [
+  { id: 'visa-dent', name: 'VISA dent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'issa-dent', name: 'Issa Dent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'cristall-dent', name: 'Кристалл-Дент', niche: 'Стоматология', kind: 'dent' },
+  { id: 'navi-dent', name: 'NaviDent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'mmk-dental', name: 'MMK Dental Clinic', niche: 'Стоматология', kind: 'dent' },
+  { id: 'ramus-dental', name: 'Ramus dental clinic', niche: 'Стоматология', kind: 'dent' },
+  { id: 'alfa-stom', name: 'Альфа Стом', niche: 'Стоматология', kind: 'dent' },
+  { id: 'impladent-family', name: 'Impladent family', niche: 'Стоматология', kind: 'dent' },
+  { id: 'janym-stom', name: 'Janym Stom', niche: 'Стоматология', kind: 'dent' },
+  { id: 'batys-dent', name: 'Batys Dent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'aq-clinic', name: 'AQ clinic', niche: 'Стоматология', kind: 'dent' },
+  { id: 'dnk-dent', name: 'DNK Dent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'konfeta-astana', name: 'Конфета', niche: 'Салон красоты', kind: 'other' },
+  { id: 'qaz-pvh', name: 'QAZ PVH', niche: 'Натяжные потолки', kind: 'other' },
+  { id: 'cleaning-taza', name: 'Cleaning Taza', niche: 'Клининг', kind: 'other' },
+  { id: 'total-dent', name: 'TotalDent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'hi-dent', name: 'Hi Dent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'alldent-astana', name: 'All Dent', niche: 'Стоматология', kind: 'dent' },
+  { id: 'luxvita-dental', name: 'LuxVita', niche: 'Стоматология', kind: 'dent' },
+];

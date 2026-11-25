@@ -4,6 +4,7 @@ import MarqueeSection from './sections/MarqueeSection';
 import AboutSection from './sections/AboutSection';
 import ServicesSection from './sections/ServicesSection';
 import ProjectsSection from './sections/ProjectsSection';
+import MoreSitesSection from './sections/MoreSitesSection';
 import ContactSection from './sections/ContactSection';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <AboutSection />
         <ServicesSection />
         <ProjectsSection />
+        <MoreSitesSection />
         <ContactSection />
       </main>
     </MotionConfig>
