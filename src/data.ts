@@ -11,6 +11,8 @@ export const contacts = {
   telegramName: '@mew_maw01',
   github: 'https://github.com/Batyrhan01',
   githubName: 'Batyrhan01',
+  instagram: 'https://www.instagram.com/batyrhan_web/',
+  instagramName: '@batyrhan_web',
 };
 
 // Ссылки в меню. href — это id секции, к которой прокрутится страница.

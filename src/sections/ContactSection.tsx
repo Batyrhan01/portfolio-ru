@@ -1,4 +1,4 @@
-import { Github, Send } from 'lucide-react';
+import { Github, Instagram, Send } from 'lucide-react';
 import FadeIn from '../components/FadeIn';
 import ContactButton from '../components/ContactButton';
 import { contact, contacts } from '../data';
@@ -39,6 +39,10 @@ export default function ContactSection() {
         <a href={contacts.telegram} target="_blank" rel="noopener noreferrer" className={linkClass}>
           <Send className="h-5 w-5" aria-hidden="true" />
           Telegram {contacts.telegramName}
+        </a>
+        <a href={contacts.instagram} target="_blank" rel="noopener noreferrer" className={linkClass}>
+          <Instagram className="h-5 w-5" aria-hidden="true" />
+          Instagram {contacts.instagramName}
         </a>
         <a href={contacts.github} target="_blank" rel="noopener noreferrer" className={linkClass}>
           <Github className="h-5 w-5" aria-hidden="true" />
